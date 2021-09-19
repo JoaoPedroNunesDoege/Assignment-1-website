@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Idea</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Project Idea</h1>
+      <p><strong>Overview:</strong>  My project is to set up a raspberry Pi as an ad block device connected to my home network  that will stop ads from popping up in any device connected through my WIFI, and also able to block website or apps from connecting to the internet at certain time periods of the day. This project needs to be cost efficient and easy to navigate and set up. Besides blocking ads it can have blacklisted websites and a specific feature where YouTube and other desirable websites and games can be blocked after 8 pm every night stoping my children at home from using the internet at undesirable times.</p>
+      <br>
+      <img src="raspberrypi.jpg" alt="Raspberry Pi"
+      width='600'>
+      <br>
+      <p><strong>Motivation:</strong> As a parent of children who use technology is important for me block ads, sometimes I walk in the lounge room and my 3 year old daughter is watching a 3 mins ad from YouTube instead her desirable show, other times she shouts out (shoo ad) making me drop what I’m doing, getting up and pressing skip to save her. The timer is to control my 8 year old that sometimes sneakily stays up late watching YouTube in his tablet. But in all this my biggest motivation in this is for myself; to stop getting up just to skip an ad or having to micromanage my children during the evening. </p>
+      <br>
+      <p><strong>Description:</strong> Have you ever imagined that those annoying ads could be blocked from any of your smart devices? It works just like a web browser extension that can block ads for specific browsers but within your whole network. It is a small device that you can connect to your internet router, it then blocks all ads from any smart device that you have connected over wifi.</p>
+      <p>If you have children like myself, it is the perfect device for your household as with it you can blacklist undesirable websites. There is also a special feature that can make certain websites like YouTube time out after 8 pm or any other desirable time. This means that sites such as youtube cannot be accessed after this time and will reactivate automatically in the morning (for this project the offline times will be between 8pm and 8am).</p>
+      <p>I will do this through using a raspberry Pi with Pi-hole program installed - becoming a private DNS server for my network. DNS service usually runs on our routers, but the router doesn’t know how to identify advertisements; the Pi-hole on the other hand does. Once it has indentified any ques for advertisement - the raspberry Pi denies them access, meaning the ads won’t be downloaded. Through doing this videos will load much faster without stopping half way through to load and play advertisements. </p>
+      <p>The device can be programmed to blacklist undesirable websites and time out apps such as youtube after a certain hour of the day. For this mode I will need to do further research as I am yet to find more information on how I could program it – currently I plan to attempt programming the system with python.</p>
+      <p>So far the steps I will take to create and program this device are as follows:</p>
+      <p>The fisrt step is setting up my raspberry pi 3, I will need to install raspberry Pi  Operation System, and for that I will go to the website <a href="https://www.raspberrypi.org/">https://www.raspberrypi.org/</a> and download raspberry Pi Imager. With the imager I will load the OS image in a micro SD card in order to install it into my raspberry Pi. Once image is in micro SD card I will connect the card into my Raspberry Pi and install the Operational System. I can do it over SSH, in my windows PC by downloading and installing PuTTY, and connecting my raspberry PI through an Ethernet cable and powering it up.</p>
+      <p>With the Operational System running I will install Pi-hole (an app that blocks ads and manages blacklisted websites), follow the configurations and get the program running.</p>
+      <p>Once raspberry Pi and Pi-hole are running, I will need to configure my devices to point to the DNS Pi-hole, in order to block the unwanted advertisements.</p>
+      <br>
+      <p><strong>Tools and Technologies</strong></p>
+      <p>Hardware needed for the project:</p>
+      <li>raspberry pi 3</li>
+      <li>micro sd card</li>
+      <li>micro SD card adapter (to connect it to my PC)</li>
+      <li>windows pc</li>
+      <li>internet router</li>
+      <li>power supply (for raspberry Pi)</li>
+      <li>Ethernet cable</li>
+      <p>Software needed for the project:</p>
+      <li>Raspberry Pi Imager</li>
+      <li>Raspberry Pi OS</li>
+      <li>Pi-hole</li>
+      <li>Python</li>
+      <li>Windows 10</li>
+      <li>PuTTY</li>
+      <br>
+      <p><strong>Skills Required:</strong> The skills that I require to complete the full project are in 3 different areas:</p>
+      <p>Home Network: Knowledge of how my home network system works,  understanding DNS, router, how the websites and internet works, IP address and network configurations.</p>
+      <p>Raspberry Pi: knowledge of how to operate and install OS in raspberry Pi, how to install apps and configure it in a way I can achieve my goals.</p>
+      <p>Programming language: I Imagine this language will be Python, I will need to watch a few beginner tutorials and hope to understand enough to be able to create this program that is part of my project. This will be where I spend the most time, in a hope to gain knowledge that will be used well in my future career.</p>
+      <br>
+      <p><strong>Outcome:</strong>The completion of this project will produce a tool that the whole household can benefit from (faster internet, no ads), it is a tool that can be customized according to my household needs (blacklisting websites of your choice, and setting working hours for certain websites).</p>
+      <p>The cost benefit of the project brings more benefits for low cost.</p>
+      <p>The original problems where I walk into my 3 years old daughter watching 3 minutes of ads will not happen anymore because the Pi-hole will identify the ad and not let it run into my network. </p>
+
+
+
+
+<br>
+  <h2>Categories</h2>
+    <li><a href="index.html">Return to main page</a></li>
+
+  </body>
+</html>
